@@ -61,3 +61,9 @@ Deployment (resource)
 
 
 
+Links:
+https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#run
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
+https://kubernetes.io/docs/reference/kubectl/conventions/
