@@ -1,0 +1,43 @@
+Name:                   worker
+Namespace:              default
+CreationTimestamp:      Sat, 20 May 2023 19:46:07 +0100
+Labels:                 app=worker
+Annotations:            deployment.kubernetes.io/revision: 3
+Selector:               app=worker
+Replicas:               10 desired | 5 updated | 13 total | 8 available | 5 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=worker
+  Containers:
+   worker:
+    Image:        dockercoins/worker:v0.3
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    False   ProgressDeadlineExceeded
+OldReplicaSets:  worker-6755995577 (0/0 replicas created), worker-5cc566d898 (8/8 replicas created)
+NewReplicaSet:   worker-f85c56b87 (5/5 replicas created)
+Events:
+  Type    Reason             Age                From                   Message
+  ----    ------             ----               ----                   -------
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled up replica set worker-5cc566d898 to 3
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled down replica set worker-6755995577 to 8 from 10
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled up replica set worker-5cc566d898 to 5 from 3
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled down replica set worker-6755995577 to 7 from 8
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled up replica set worker-5cc566d898 to 6 from 5
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled down replica set worker-6755995577 to 6 from 7
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled up replica set worker-5cc566d898 to 7 from 6
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled down replica set worker-6755995577 to 5 from 6
+  Normal  ScalingReplicaSet  48m                deployment-controller  Scaled up replica set worker-5cc566d898 to 8 from 7
+  Normal  ScalingReplicaSet  48m (x7 over 48m)  deployment-controller  (combined from similar events): Scaled down replica set worker-6755995577 to 0 from 1
+  Normal  ScalingReplicaSet  37m                deployment-controller  Scaled up replica set worker-f85c56b87 to 3
+  Normal  ScalingReplicaSet  37m                deployment-controller  Scaled down replica set worker-5cc566d898 to 8 from 10
+  Normal  ScalingReplicaSet  37m                deployment-controller  Scaled up replica set worker-f85c56b87 to 5 from 3
