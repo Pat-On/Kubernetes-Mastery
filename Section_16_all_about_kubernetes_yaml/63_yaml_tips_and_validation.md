@@ -32,3 +32,8 @@
 
 - we will learn about Kubernetes cluster-specific validation with kubectl later 
 
+## Links:
+https://github.com/instrumenta/kubeval
+https://github.com/adrienverge/yamllint
+https://codebeautify.org/yaml-validator
+https://www.yamllint.com/
