@@ -37,3 +37,7 @@ exercise:
 - show the rollout plan for out deployments:
 
 `kubectl get deploy -o json | jq ".items[] | {name:.metadata.name} + .spec.strategy.rollingUpdate"`
+
+Links:
+https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
