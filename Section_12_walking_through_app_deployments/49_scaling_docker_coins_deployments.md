@@ -24,3 +24,6 @@
 
 - The graph will peak at 10 hashes/second
 - we can add as many workers at we want: we will never go past 10 hashes/seconds
+
+## Links:
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/
