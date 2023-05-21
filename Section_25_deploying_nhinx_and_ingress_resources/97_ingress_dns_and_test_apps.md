@@ -36,3 +36,7 @@ kubectl expose deployment cheddar --port=80
 kubectl expose deployment stilton --port=80
 kubectl expose deployment wensleydale --port=80
 
+
+## Links:
+https://hub.docker.com/r/errm/cheese/tags/
+https://nip.io/
