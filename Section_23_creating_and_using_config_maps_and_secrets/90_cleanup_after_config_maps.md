@@ -1,0 +1,1 @@
+kubectl delete pod/haproxy pod/registry
